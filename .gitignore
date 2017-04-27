@@ -74,6 +74,6 @@ local.properties
 
 # Maven
 log/
-target/
+//target
 .scala_dependencies
 .worksheet
