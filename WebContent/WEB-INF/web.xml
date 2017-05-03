@@ -12,14 +12,6 @@
 		<servlet-name>MyServlet1</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.htm</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
-		<welcome-file>default.html</welcome-file>
-		<welcome-file>default.htm</welcome-file>
-		<welcome-file>default.jsp</welcome-file>
-	</welcome-file-list>
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>all-app</web-resource-name>
@@ -32,6 +24,6 @@
 	</security-role>
 	<login-config>
 		<auth-method>BASIC</auth-method>
-		<realm-name>MyUserDatabase</realm-name>
+		<realm-name>UserDatabase</realm-name>
 	</login-config>
 </web-app>

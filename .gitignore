@@ -77,3 +77,4 @@ log/
 //target
 .scala_dependencies
 .worksheet
+/target/
