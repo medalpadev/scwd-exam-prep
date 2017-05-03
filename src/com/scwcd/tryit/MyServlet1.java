@@ -35,6 +35,7 @@ public class MyServlet1 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 		out.println("Hello Med");
+		out.println("<a href=home.jsp>link</a>");
 	}
 
 }
