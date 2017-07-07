@@ -4,6 +4,12 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
 	<display-name>scwcd-samples</display-name>
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://com.med4dev.test/jsp/tld/myFirstTag</taglib-uri>
+			<taglib-location>/WEB-INF/MyTLD1.tld</taglib-location>
+		</taglib>
+	</jsp-config>
 	<servlet>
 		<servlet-name>MyServlet1</servlet-name>
 		<servlet-class>com.scwcd.tryit.MyServlet1</servlet-class>
@@ -20,7 +26,9 @@
 			<web-resource-name>all-app</web-resource-name>
 			<url-pattern>/*</url-pattern>
 		</web-resource-collection>
-		<auth-constraint><role-name>kabrane</role-name></auth-constraint>
+		<auth-constraint>
+			<role-name>kabrane</role-name>
+		</auth-constraint>
 	</security-constraint>
 	<security-role>
 		<role-name>kabrane</role-name>
